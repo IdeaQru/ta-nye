@@ -3,7 +3,6 @@
 
 #include <Arduino.h>
 #include <Wire.h>
-#include <Adafruit_SHT31.h>
 
 extern float lastTemperature; // Variabel global untuk menyimpan suhu terakhir
 extern float lastHumidity;    // Variabel global untuk menyimpan kelembapan terakhir

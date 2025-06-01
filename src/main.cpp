@@ -54,8 +54,8 @@ void loop() {
     float temperature, humidity;
     if (!readSHT31(&temperature, &humidity)) {
       humidity += 0.0; // Offset jika diperlukan
-      lastTemperature = temperature + random(400) / 1000.0;
-      lastHumidity = humidity + random(400) / 1000.0;
+      lastTemperature = temperature;
+      lastHumidity = humidity;
       Serial.print("Temperature: ");
       Serial.print(temperature);
       Serial.print(" °C\tHumidity: ");
